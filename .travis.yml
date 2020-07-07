@@ -7,3 +7,12 @@ before_install:
 
 script:
   - docker run safiullahashfaq/docker-react npm run test -- --coverage
+# deploy:
+#   provider: elasticbeanstalk
+#   region: 'us-west-2'
+#   app: 'docker'
+#   env: 'Docker-env'
+#   bucket_name: 'name of bucket created by travis ci'
+#   bucket_path: 'app_name for first time bcz bucket does not exist / url of bucket created by travis ci'
+#   on:
+#     branch: master
